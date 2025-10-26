@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission Application</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar">
+      <h1>Admission Portal</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section id="home" class="hero">
+    <h2>Welcome to the Student Admission Portal</h2>
+    <p>Apply for your desired course easily and track your application status online.</p>
+    <button onclick="scrollToApply()">Apply Now</button>
+  </section>
+
+  
+  <section id="apply" class="form-section">
+    <h2>Application Form</h2>
+    <form id="admissionForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="">Select a Course</option>
+        <option>B.Tech</option>
+        <option>MBA</option>
+        <option>BCA</option>
+        <option>M.Tech</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="successMessage" class="hidden">
+       Application Submitted Successfully!
+    </div>
+  </section>
+
+  
+  <section id="about" class="about">
+    <h2>About This Project</h2>
+    <p>
+      The Admission Application system helps manage student admissions efficiently.
+      This static version demonstrates the frontend layout before backend integration.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Admission Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
